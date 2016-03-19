@@ -1,3 +1,10 @@
+/*
+ * queue.h
+ * Brett Raible
+ * CIS 361 - Project 2
+ * 3/17/2016
+*/ 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
