@@ -23,4 +23,4 @@ typedef struct Queue {
 
 void addElement(Customer* c, Queue* q);		//Add a customer to the queue
 Customer* removeElement(Queue* q);		//Remove & return the head
-int queueSize(Queue* q);				//Return size of the given queue
+int queueSize(Queue* q);			//Return size of the given queue
