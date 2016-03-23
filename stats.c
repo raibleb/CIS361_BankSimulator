@@ -9,13 +9,13 @@
 #include<stdlib.h>
 #include"stats.h" 
 
-int totalCustomersServed = 0;
-double avgWaitTime = 0.0;
-int maxWaitTime = 0;
-double avgWaitSize = 0.0;
-int maxWaitSize = 0;
+static int totalCustomersServed = 0;
+static double avgWaitTime = 0.0;
+static int maxWaitTime = 0;
+static double avgWaitSize = 0.0;
+static int maxWaitSize = 0;
 
-int custServed() {
+int getCustServed() {
 	return totalCustomersServed;
 }
 
@@ -49,4 +49,12 @@ void updateWaitQueue(int numElements) {
 	if(numElements > maxWaitSize)
 		maxWaitSize = numElements;
 	avgWaitSize += numElements;
+}
+
+void clearStats() {
+	totalCustomersServed = 0;
+	avgWaitTime = 0.0;
+	maxWaitTime = 0;
+	avgWaitSize = 0.0;
+	maxWaitSize = 0;
 }

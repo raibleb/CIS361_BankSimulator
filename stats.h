@@ -18,3 +18,4 @@ int getMaxWaitSize();		//Return the max size of the queue;
 
 void addCustData(int arrivalTime, int serviceTime);	
 void updateWaitQueue(int numElements);
+void clearStats();
